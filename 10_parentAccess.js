@@ -1,6 +1,8 @@
 function parentAccess (node){
     return node.parentNode;
 }
-console.log(parentAccess("Home"));
+const element = document.querySelector('p');
+const parent = parentAccess(element);
+console.log(parent)
 
 module.exports = parentAccess;
