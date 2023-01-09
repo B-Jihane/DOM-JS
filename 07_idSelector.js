@@ -1,5 +1,5 @@
 function idSelector(){
-    return document.getElementById('input')
+    return document.getElementById('input').textContent;
 }
 
 console.log(idSelector())
