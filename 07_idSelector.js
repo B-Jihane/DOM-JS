@@ -1,7 +1,7 @@
-function idSelector("id"){
-    return document.getElementById("id")
+function idSelector(){
+    return document.getElementById('input')
 }
 
-console.log(idSelector("input"))
+console.log(idSelector())
 
 module.exports = idSelector;
