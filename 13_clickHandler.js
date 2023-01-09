@@ -1,8 +1,6 @@
-const button = document.querySelector("button#clickme");
-const divContent = document.querySelector(div.content);
-button.addEventListener('click', function() {
-    const p = document.createElement('p');
-    p.id = 'result';
-    p.innerHTML = 'clicked';
-    divContent.appendChild(p);
+let button = document.querySelector("button#clickme");
+button.addEventListener('click', (e) => {
+    let p = document.createElement('p');
+    p.textContent = 'clicked';
+    document.querySelector("div.content").appendChild(p);
   });

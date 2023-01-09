@@ -1,5 +1,5 @@
 function parentAccess (node){
-    return document.querySelector(node).parentNode;
+    return node.parentElement;
 }
 
 module.exports = parentAccess;
