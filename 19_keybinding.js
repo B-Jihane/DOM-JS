@@ -4,16 +4,16 @@ let x = 0;
 let y = 0;
 
 document.addEventListener("keydown", function (event) {
-    if (event.key === 37){
+    if (event.keyCode === 37){
         //Left
         x -= 10;
-    }else if (event.key == 38){
+    }else if (event.keyCode == 38){
         //Up
         y -= 10;
-    }else if (event.key === 39){
+    }else if (event.keyCode === 39){
         //Right
         x += 10;
-    }else if (event.key === 40){
+    }else if (event.keyCode === 40){
         //Down
         y += 10;
     }
