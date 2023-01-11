@@ -1,4 +1,4 @@
-let nom = document.getElementsByName('name')[0].value;;
+let nom = document.getElementsByName('name')[0].value;
 let age = document.getElementsByName("age")[0].value;
 let birthdate = document.getElementsByName("birthdate")[0].value;
 
