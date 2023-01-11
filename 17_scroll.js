@@ -1,7 +1,7 @@
 function addDates () {
     let date = new Date();
     let p = document.createElement('p');
-    p.innerHTML = "Date: " + date;
+    p.innerHTML = date.toUTCString();
     document.body.appendChild(p);
 }
 
