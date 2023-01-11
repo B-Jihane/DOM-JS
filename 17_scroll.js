@@ -1,9 +1,24 @@
-
 function addDates () {
+    let date = new Date();
+    let p = document.createElement('p');
+    p.innerHTML = "Date: " + date;
+    document.body.appendChild(p);
+}
+
+/* for(let i=0; i < 12; i++) {
+    console.log(addDates());
+} */
+
+document.addEventListener("scroll", addDates)
+
+
+
+/* function addDates () {
     let p = document.createElement('p');
     let date = new Date();
-    p.textContent = "Date: " + date;
-    const content = document.querySelector('body');
+    let dateUTC = date.toUTCString();
+    p.textContent = "Date: " + dateUTC;
+    const content = document.body;
     content.insertBefore(p, content.lastChild);
 }
 
@@ -11,7 +26,7 @@ function addDates () {
     console.log(addDates());
 } */
 
-window.onscroll = function() {
+/* window.onscroll = function() {
     // innerHeight : permet d'avoir la heauteur de la partie visible de la fenêtre de navigation.
     // scrollY : represente le nombre de px scolé verticalement
     // offsetHeight : permet d'avoir la hauteur de body
@@ -19,7 +34,7 @@ window.onscroll = function() {
         console.log(addDates());
     }
   };
-
+ */
 
 
 
