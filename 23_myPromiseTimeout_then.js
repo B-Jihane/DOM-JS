@@ -3,7 +3,7 @@ const sleep = (milliseconds) => {
 };
 
 const button = document.querySelector('button');
-button.addEventListener('click', async () => {
+button.addEventListener('click', () => {
     return sleep(2000)
     .then(() => {
         let p = document.createElement('p');
